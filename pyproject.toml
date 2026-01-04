@@ -1,0 +1,25 @@
+[project]
+name = "brick-test-tecnico"
+version = "0.1.0"
+description = "Solution for the technical test for Brick (Etapa 1)."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "cloudscraper>=1.2.71",
+    "hatchling>=1.28.0",
+    "playwright>=1.57.0",
+    "python-dateutil>=2.9.0.post0",
+    "requests>=2.32.5",
+    "selectolax>=0.4.6",
+]
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["collector"]
