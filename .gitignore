@@ -127,4 +127,5 @@ dmypy.json
 
 # Text files
 *.txt
+*.json
 
